@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+  body
+  {
+  background-color:#f6f6f6;
+  }
+  .bg-header
+  {
+  background-color:#ffffff;
+  padding:10px;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 2px 1px 0 rgba(0,0,0,0.12) !important;
+  }
+  .bg-container
+  {
+  margin-top:20px;
+  margin-bottom: 20px;
+  }
+  .bg-container-shadow
+  {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+  }
+  .bg-col4
+  {
+  background-color:#ffffff;
+  height:auto;
+  }
+  .bg-col8
+  {
+  background-color:#f2f2f3;
+  }
+  .padding-0
+  {
+  padding-left:0px;
+  padding-right:0px;
+  }
+  .bg-span-1
+   {
+    padding: 10px;
+    float: left;
+    background-color: #ffd84c;
+  }
+  .col4-h3
+  {
+  padding:20px;
+  }
+  .input-lg {
+    height: 65px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.position-label
+{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    color: #d0d0d0;
+}
+.position-label-1
+{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    color: #d0d0d0;
+	
+}
+.position-label-11
+{
+    width: 32% !important;
+    float: left;
+	    margin-right: 2%;
+}
+.position-label-2
+{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    color: #d0d0d0;
+	
+}
+.position-label-22
+{
+    width: 32% !important;
+    float: left;
+	margin-right: 2%;
+}
+.position-label-3
+{
+    position: relative;
+    top: 50px;
+    left: 75px;
+    color: #d0d0d0;
+	
+}
+.position-label-33
+{
+    width: 32% !important;
+    float: left;
+}
+select.input-lg {
+    height: 65px;
+    line-height: 46px;
+}
+.position-label-3-ad {
+    position: relative;
+    top: 47px;
+    left: 16px;
+    color: #d0d0d0;
+}
+.half-width
+{
+    width: 49% !important;
+    float: left;
+	margin-right: 2%;
+}
+.half-width-1
+{
+    width: 49% !important;
+    float: left;
+}
+.btn-info {
+    color: #fff;
+    background-color: #6096e8;
+    border-color: #6096e8;
+    padding: 15px;
+    margin: 20px auto;
+    float: right;
+    border-radius: 0px;
+	    font-size: 20px;
+}
+.mrgn-tp
+{
+margin-top:100px;
+}
+.a_col4
+{
+    color: #8b8b8b;
+    padding: 20px;
+    float: left;
+    margin-top: 50px;
+}
+.btn-default {
+    color: #333;
+    background-color: #c2c2c2;
+    border-color: #ccc;
+    border-radius: 0px;
+}
+@media only screen and (max-width:567px)
+{
+.position-label-3 {
+    position: relative;
+    top: 50px;
+    left: 23px;
+    color: #d0d0d0;
+}
+}
+  </style>
+</head>
+<body>
+<section class="bg-header">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+<img src="images/logo.jpg" alt="logo" class="center-block" >
+
+</div>
+</div>
+</div>
+</section>
+<section class="bg-container">
+<div class="container bg-container-shadow">
+<div class="row">
+<div class="col-sm-12 padding-0">
+<div class="col-sm-4 bg-col4 padding-0">
+<p><span class="bg-span-1">Work Comp Wizard</span></p>
+<img src="images/step.jpg" alt="flower" class="img-responsive mrgn-tp" width="100%">
+<br/>
+<h3 class="text-center">Enter credit card info</h3>
+<img src="images/flower.jpg" alt="flower" class="img-responsive" width="100%">
+<h3 class="col4-h3">We don't charge your credit card until after the free 3-day trail period expires.</h3>
+<h3 class="col4-h3">Zero commitment - you can cancel at any time.</h3>
+<a href="#" class="a_col4"><i class="glyphicon glyphicon-arrow-left"></i> Previous step</a>
+</div>
+<div class="col-sm-8">
+<h4>Billing Info <img src="images/icons.jpg" alt="icon" class="pull-right"/></h4>
+<form>
+  <div class="form-group">
+  <label class="position-label">CREDIT CARD HOLDER</label>
+    <input class="form-control input-lg" type="text" placeholder="">
+  </div>
+  <div class="form-group">
+   <label class="position-label">CREDIT CARD NUMBER</label>
+    <input class="form-control input-lg" type="text" placeholder="">
+  </div>
+   <div class="form-group position-label-11">
+   <label class="position-label-1">CVV</label>
+   <input class="form-control input-lg" type="text" placeholder="453">
+   </div>
+   <div class="form-group position-label-22">
+   <label class="position-label-2">EXP MONTH</label>
+   <select class="form-control input-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+   </div>
+   <div class="form-group position-label-33">
+   <label class="position-label-3">EXP YEAR</label>
+   <select class="form-control input-lg">
+    <option></option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  </div>
+  <div class="form-group">
+   <label class="position-label position-label-3-ad">ADDRESS</label>
+    <input class="form-control input-lg" type="text" placeholder="">
+  </div>
+  <div class="form-group half-width">
+   <label class="position-label position-label-3-ad">APT/SUITE</label>
+    <input class="form-control input-lg" type="text" placeholder="">
+  </div>
+  <div class="form-group half-width-1">
+   <label class="position-label position-label-3-ad">CITY</label>
+    <input class="form-control input-lg" type="text" placeholder="">
+  </div>
+  <div class="form-group half-width">
+   <label class="position-label  position-label-3-ad">SELECT STATE</label>
+   <select class="form-control input-lg">
+    <option></option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+   </div>
+   <div class="form-group half-width-1">
+   <label class="position-label position-label-3-ad">ZIP/POSTAL</label>
+    <input class="form-control input-lg" type="text" placeholder="">
+  </div>
+  <div class="form-group">
+   <label class="position-label position-label-3-ad">COUNTRY</label>
+    <select class="form-control input-lg">
+    <option></option>
+    <option>INDIA</option>
+    <option>USA</option>
+    <option>RUSSIA</option>
+  </select>
+  </div>
+</form>
+<div class="">
+<button class="btn btn-info col-sm-10 col-sm-offset-2" data-toggle="modal" data-target="#myModal"> Start Free Trail</button>
+</div>
+<div class="clearfix"></div>
+<p style="text-align:center;font-size:18px;">Need help? Chat with us below,<span style="color:#6096e8;">shoot us an email</span>, or call 646-847-7711</p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<button class="btn btn-danger pull-right" style="margin-right:20px;">Dailybill is here to help <i class="glyphicon glyphicon-triangle-bottom"></i></button>
+
+
+
+
+     <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <p style="font-size:17px;text-align:justify;">Your credit card was declined:(
+		  <br/>Please contact your bank or try <br/>
+		  another payment method
+		  </p>
+		  <img src="images/flowerpop.jpg" alt="popup" class="img-responsive"/>
+		  <button class="btn btn-default col-sm-8 col-sm-offset-2">OK</button>
+		  <div class="clearfix"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
